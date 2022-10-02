@@ -4,6 +4,68 @@
 <head>
   <meta charset="utf-8">
   <title>My Information</title>
+  <style>
+    hr {
+      border-top: dashed;
+    }
+
+    table {
+      border: solid;
+      width: 100%;
+    }
+
+    td {
+      max-width: 100%;
+      border: solid;
+    }
+
+    .skillBar {
+      background: black;
+      -webkit-transition: background 1s ease-out;
+      -moz-transition: background 1s ease-out;
+      -o-transition: background 1s ease-out;
+      transition: background 1s ease-out;
+    }
+
+    .skillRank {
+      color: white;
+      text-align: right;
+      background: white;
+      -webkit-transition: background 1s ease-out;
+      -moz-transition: background 1s ease-out;
+      -o-transition: background 1s ease-out;
+      transition: background 1s ease-out;
+    }
+
+    .skillBar:hover {
+      background: white;
+      cursor: pointer;
+    }
+    .skillBar:hover > .skillRank{
+      background: black;
+      cursor: pointer;
+    }
+
+    .cSharp {
+      width: 80%;
+    }
+
+    .typeScript {
+      width: 50%;
+    }
+
+    .html {
+      width: 60%;
+    }
+
+    .css {
+      width: 50%;
+    }
+
+    .javaScript {
+      width: 50%;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,11 +82,54 @@
   </div>
   <br>
   <hr>
-  <h1>ประสบการณ์การฝึกงาน</h1>
+  <h1>Experienced</h1>
   <ul>
     <li>NTBX Software Engineer 6 Month</li>
     <li>7-11 3 Month</li>
   </ul>
+  <br>
+  <hr>
+  <h1>Skills</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Skill</td>
+        <td>Rank</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>C#</td>
+        <td class="skillBar">
+          <div class="skillRank cSharp">80%</div>
+        </td>
+      </tr>
+      <tr>
+        <td>TypeScript</td>
+        <td class="skillBar">
+          <div class="skillRank typeScript">50%</div>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td class="skillBar">
+          <div class="skillRank html">60%</div>
+        </td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td class="skillBar">
+          <div class="skillRank css">50%</div>
+        </td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td class="skillBar">
+          <div class="skillRank javaScript">50%</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <br>
   <hr>
   <div>
