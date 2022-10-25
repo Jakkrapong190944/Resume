@@ -1,0 +1,318 @@
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  font-family: 'Mitr', sans-serif !important;
+  font-size: 2em;
+  color: white !important;
+}
+
+.anchor {
+  scroll-margin-top: 100px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:focus {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+table {
+  width: 90%;
+  margin: 0px 5% 0px 5%;
+}
+
+td {
+  max-width: 100% !important;
+  border: solid;
+  padding-left: 5px;
+}
+
+th {
+  border: solid;
+  padding-left: 5px;
+}
+
+.Top-Header {
+  background-color: transparent;
+}
+
+.Middle-Header {}
+
+.Bottom-Header {}
+
+.isDisabled {
+  cursor: not-allowed;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+/*Navigate Bar*/
+.navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navli {
+  float: left;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navActive {
+  background-color: #04AA6D;
+}
+
+.skillBar {
+  background-color: black;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.skillRank {
+  color: white;
+  text-align: right;
+  background-color: white;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.skillBar:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.skillBar:hover>.skillRank {
+  background-color: black;
+  cursor: pointer;
+}
+
+.cSharp {
+  width: 80%;
+}
+
+.typeScript {
+  width: 50%;
+}
+
+.html {
+  width: 60%;
+}
+
+.css {
+  width: 50%;
+}
+
+.javaScript {
+  width: 50%;
+}
+
+/* BG */
+.wrapper {
+  height: 100%;
+}
+
+.fixed {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+
+.fixed h2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.scroll {
+  padding: 10px 70px;
+}
+
+.introducebg {
+  background-image: url("../images/pim.jpg")
+}
+
+.expbg {
+  background-image: url("../images/me.jpg")
+}
+
+.skillbg {
+  background-image: url("../images/bg1.jpg")
+}
+
+.contactbg {
+  background-image: url("../images/contact_bg.jpg")
+}
+
+/*Fade in Image*/
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Box Content*/
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 30px;
+}
+
+/*Gradient BG*/
+.gbg {
+  background: linear-gradient(167deg, #2fe612, #12bfe6, #1712e6, #db12e6);
+  background-size: 800% 800%;
+
+  -webkit-animation: GradientBG 23s ease infinite;
+  -moz-animation: GradientBG 23s ease infinite;
+  animation: GradientBG 23s ease infinite;
+}
+
+@-webkit-keyframes GradientBG {
+  0% {
+    background-position: 62% 0%
+  }
+
+  50% {
+    background-position: 39% 100%
+  }
+
+  100% {
+    background-position: 62% 0%
+  }
+}
+
+@-moz-keyframes GradientBG {
+  0% {
+    background-position: 62% 0%
+  }
+
+  50% {
+    background-position: 39% 100%
+  }
+
+  100% {
+    background-position: 62% 0%
+  }
+}
+
+@keyframes GradientBG {
+  0% {
+    background-position: 62% 0%
+  }
+
+  50% {
+    background-position: 39% 100%
+  }
+
+  100% {
+    background-position: 62% 0%
+  }
+}
